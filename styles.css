@@ -41,7 +41,8 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow at the bottom */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a soft shadow at the bottom */
 }
 
 .navbar .ent-logo {
@@ -83,8 +84,9 @@ body {
     transition: border-bottom color 0.5s ease;
 }
 
-.nav-link:hover{
-    color: var(--text-color) !important; /* Ensure the text color remains white */
+.nav-link:hover {
+    color: var(--text-color) !important;
+    /* Ensure the text color remains white */
     border-bottom: 2px solid var(--text-color);
 }
 
@@ -92,7 +94,8 @@ body {
 .nav-link:active {
     color: var(--text-color) !important;
     border-bottom: 2px solid var(--text-color);
-    outline: none; /* Remove the default outline */
+    outline: none;
+    /* Remove the default outline */
 }
 
 /* Navbar Toggler (Mobile View) */
@@ -455,4 +458,110 @@ body {
 
 .fadeInUp {
     animation: fadeInUp 1s ease-out;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 10px 30px;
+    }
+
+    .footer {
+        padding: 20px 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .ent-logo {
+        margin-left: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 2.4rem;
+    }
+
+    .footer {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .ent-logo {
+        margin-left: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .home .container {
+        text-align: center;
+    }
+
+    .home .col-lg-6 {
+        margin-bottom: 20px;
+    }
+
+    .features .card {
+        margin-bottom: 20px;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    .testimonials .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonials .container .item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .home .display-4 {
+        font-size: 2rem;
+    }
+
+    .features h2 {
+        font-size: 1.5rem;
+    }
+
+    .features .card-title {
+        font-size: 1.2rem;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonials .container .item p {
+        font-size: 0.9rem;
+    }
 }
