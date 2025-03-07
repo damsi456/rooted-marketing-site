@@ -345,11 +345,11 @@ body {
 
 .screenshots .shots {
     justify-content: center;
-    margin-left: 6%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 30px;
+    justify-items: center;
 }
 
 .screenshots .shots img {
