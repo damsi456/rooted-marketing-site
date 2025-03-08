@@ -242,7 +242,6 @@ body {
 /* Footer Section */
 .footer {
     background-color: var(--primary-dark);
-    /* Dark background for contrast */
     color: var(--text-color);
     padding: 20px 200px;
     text-align: center;
