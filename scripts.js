@@ -77,3 +77,21 @@ featureCards.forEach(card => {
 
 // Get the current year and update the span with id "current-year"
 document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Mute video when out of view
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("marketingVideo");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                video.muted = false; // Unmute when in view
+                video.play();
+            } else {
+                video.muted = true; // Mute when out of view
+            }
+        });
+    }, { threshold: 0.5 }); // Activate when 50% of the section is visible
+
+    observer.observe(video);
+});
