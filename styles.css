@@ -137,6 +137,7 @@ body {
 
     .navbar-toggler {
         display: block;
+        margin-left: auto; /* Add this line to move the toggler to the right */
     }
 }
 
